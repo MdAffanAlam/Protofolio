@@ -2,23 +2,25 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { Button } from './Button'
-import hero from '../images/hero1.jpg'
+import { useGlobalContext } from './Context';
+
 //import { GlobalStyle } from './GlobalStyle';
 
 const HeroSection = () => {
+  const {name,image} = useGlobalContext();
   return (
       <Wrapper>
           <div className='container grid grid-two-column'>
               <div className='section-hero-data'>
                 <p>This is Me</p>
-                <h1>MD Affan Alam</h1>
-                <p>I am MD Affan Alam.A Computer Science Student</p>
+                <h1>{name}</h1>
+                <p>I am {name}.I'm currently studying Bachelor of Technology in Computer Science and Engineering.</p>
                 <Button className='btn hireme-btn'><NavLink to='/'>Hire Me</NavLink></Button>
               </div>
               {/*For image */}
               <div className='section-hero-image'>
                     <picture>
-                        <img src={hero} alt=''   ></img>                 
+                        <img src={image} alt=''   ></img>                 
                         </picture>
               </div>
           </div>
@@ -37,6 +39,7 @@ const Wrapper = styled.section`
 
   .btn {
     max-width: 16rem;
+    margin-top: 2rem;
   }
 
   .hero-top-data {

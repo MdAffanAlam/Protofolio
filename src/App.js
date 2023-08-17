@@ -1,6 +1,6 @@
 import './App.css';
 import About from './component/About';
-import Products from './component/Products';
+import Services from './component/Services';
 import Contact from './component/Contact';
 import SinglePage from './component/SingleProduct';
 import Cart from './component/Cart';
@@ -47,7 +47,7 @@ function App() {
     <Routes>
       <Route exact path="/" element={<Home/>}/>
       <Route exact path="/about" element={<About/>}/>
-      <Route exact path="/products" element={<Products/>}/>
+      <Route exact path="/servicess" element={<Services/>}/>
       <Route exact path="/contact" element={<Contact/>}/>
       <Route exact path="/singlepage" element={<SinglePage/>}/>
       <Route exact path="/cart" element={<Cart/>}/>
