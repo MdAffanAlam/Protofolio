@@ -63,6 +63,7 @@ const Footer = () => {
                 <a
                   href="https://instagram.com/i_affan5?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
                   target="_blank"
+                  rel="noreferrer" 
                 >
                   <FaInstagram className="icons" />
                 </a>

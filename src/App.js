@@ -15,6 +15,7 @@ import Home from './component/Home';
 import {ThemeProvider} from 'styled-components';
 import { GlobalStyle } from './component/GlobalStyle';
 import Footer from './component/Footer';
+import GoToTop from './component/GotoTop';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
       <Route exact path="/cart" element={<Cart/>}/>
       <Route exact path="/*" element={<ErrorPage/>}/>   
     </Routes>
+    <GoToTop/>
     <Footer/>
   </Router>
   </ThemeProvider>
